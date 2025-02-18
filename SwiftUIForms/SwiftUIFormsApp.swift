@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIFormsApp: App {
     var body: some Scene {
         WindowGroup {
-            RegistrationView()
+            RegistrationFormView()
         }
     }
 }

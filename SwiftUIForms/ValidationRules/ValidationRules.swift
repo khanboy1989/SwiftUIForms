@@ -28,3 +28,4 @@ struct ValidationRules {
         return password == confirmPassword ? nil : "Passwords do not match"
     }
 }
+
