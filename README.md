@@ -11,7 +11,7 @@ SwiftUIForms is a powerful yet lightweight **SwiftUI-based** registration form t
 - ✅ **Protocol-Oriented Validation System** for modular validation rules.  
 - ✅ **`ValidatedField` Observable Object** for dynamic input validation.  
 - ✅ **Custom `.validatedField` Modifier** for reusable form validation.  
-- ✅ **Real-Time Validation** with **debounce** and error handling.    
+- ✅ **Real-Time Validation** with **debounce** and error handling.  
 - ✅ **Auto-Focus Navigation** between fields for better UX.  
 - ✅ **Submit Button Disabled Until All Fields Are Valid**.  
 
@@ -96,28 +96,14 @@ class ValidatedField: ObservableObject {
 }
 ```
 
-#### 🔹 Step 4: Implement `ValidatedField` in ViewModel  
-```swift
-class RegistrationFormViewModel: ObservableObject {
-    @Published var email: ValidatedField
-    @Published var password: ValidatedField
-    @Published var canSubmit: Bool = false
-    
-    init() {
-        let emailRules = [AnyValidationRule(EmailValidationRule())]
-        let passwordRules = [AnyValidationRule(PasswordValidationRule(minLength: 8))]
-        
-        self.email = ValidatedField(validationRules: emailRules)
-        self.password = ValidatedField(validationRules: passwordRules)
-    }
-}
-```
-
 ---
 
 ## 📷 Screenshots  
-![Simulator Screenshot](https://github.com/user-attachments/assets/c0b10b96-f5e4-4eb9-95f8-130a14bd618f)  
-![Simulator Screenshot](https://github.com/user-attachments/assets/475242be-80ca-47ff-90b4-ea255cef8f61)  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c0b10b96-f5e4-4eb9-95f8-130a14bd618f" width="300" />
+  <img src="https://github.com/user-attachments/assets/475242be-80ca-47ff-90b4-ea255cef8f61" width="300" />
+  <img src="https://github.com/user-attachments/assets/3183df0b-afb6-4a6b-b200-6a43d0e75d05" width="300" />
+</div>
 
 ---
 
@@ -139,22 +125,3 @@ open SwiftUIForms.xcodeproj
 
 ---
 
-## 👥 Contributing  
-We welcome contributions! 🚀  
-If you’d like to improve this project, feel free to fork the repository and submit a **pull request**.  
-
----
-
-## 📝 License  
-This project is licensed under the **MIT License**.  
-
----
-
-## 📧 Contact  
-For any inquiries or issues, feel free to reach out!  
-📧 **Email:** serhankhan0@gmail.com  
-🐙 **GitHub:** [khanboy1989](https://github.com/khanboy1989)  
-
----
-
-### 🎉 Happy coding! 🚀
